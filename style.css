@@ -135,6 +135,8 @@ input {
 
 .result {
   font-size: 36px;
+  color: var(--strong-cyan);
+  font-weight: bold;
 }
 
 .results-box {

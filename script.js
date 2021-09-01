@@ -62,9 +62,11 @@ function removeSelected() {
 function calculateTip() {
   const tipTotal = bill * (tipPercent / 100);
   tipPerPerson = tipTotal / persons;
-  totalPerPerson = bill / persons;
-  tip.innerText = `$${tipPerPerson.toFixed(2)}`;
-  total.innerText = `$${totalPerPerson.toFixed(2)}`;
+  totalPerPerson = bill / persons + tipPerPerson;
+  if (!Number.isNaN(tipPerPerson) && !Number.isNaN(totalPerPerson)) {
+    tip.innerText = `$${tipPerPerson.toFixed(2)}`;
+    total.innerText = `$${totalPerPerson.toFixed(2)}`;
+  }
 }
 
 // Event listeners
