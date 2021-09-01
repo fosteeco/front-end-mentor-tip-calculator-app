@@ -26,34 +26,29 @@
     <div class="calculator">
       <div class="controls">
         <form action="">
-          <div class="form-control">
+          <div class="form-control bill-control">
             <label for="bill" name="bill">Bill</label>
-            <input type="text" id="bill" />
+            <input type="text" id="bill" class="text-input" placeholder="0" />
           </div>
           <label for="tip-p">Select tip %</label>
           <div class="tip-grid">
-            <div class="form-control">
-              <input type="radio" name="tip-p" value="5" checked />5%<br />
-            </div>
-            <div class="form-control">
-              <input type="radio" name="tip-p" value="10" />10%<br />
-            </div>
-            <div class="form-control">
-              <input type="radio" name="tip-p" value="15" />15%<br />
-            </div>
-            <div class="form-control">
-              <input type="radio" name="tip-p" value="20" />20%<br />
-            </div>
-            <div class="form-control">
-              <input type="radio" name="tip-p" value="25" />25%<br />
-            </div>
-            <div class="form-control">
-              <input type="radio" name="tip-p" value="custom" />custom<br />
-            </div>
+            <button id="tip-btn 5p">5%</button>
+            <button id="tip-btn 10p">10%</button>
+            <button id="tip-btn 15p">15%</button>
+            <button id="tip-btn 20p">20%</button>
+            <button id="tip-btn 25p">25%</button>
+            <input type="text" class="tip-input" placeholder="Custom" />
+            <!-- <button id="tip-btn custom">Custom</button> -->
           </div>
           <div class="form-control">
             <label for="num-people">Number of People</label>
-            <input type="number" name="num-people" id="num-people" />
+            <input
+              type="number"
+              name="num-people"
+              id="num-people"
+              class="text-input"
+              placeholder="0"
+            />
           </div>
         </form>
       </div>

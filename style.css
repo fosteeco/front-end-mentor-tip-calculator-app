@@ -43,6 +43,32 @@ input {
   border: 0;
 }
 
+.text-input {
+  text-align: right;
+}
+
+.form-control {
+  position: relative;
+}
+
+.bill-control::before {
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 900;
+  content: '\f155';
+  color: #000;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
+
+.tip-input {
+  width: 100%;
+}
+
+.tip-input::placeholder {
+  color: var(--very-dark-cyan);
+}
+
 .controls {
   padding: 30px;
 }
@@ -54,6 +80,8 @@ input {
 .tip-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 50px);
+  grid-gap: 10px;
   padding: 10px 0;
 }
 
@@ -75,12 +103,18 @@ input {
   font-size: 36px;
 }
 
+.results-box {
+  display: flex;
+  flex-direction: column;
+}
+
 .btn-reset {
   background-color: var(--strong-cyan);
   border: 0;
   width: 100%;
   border-radius: 5px;
   padding: 10px 15px;
+  margin-top: auto;
 }
 
 .attribution {
