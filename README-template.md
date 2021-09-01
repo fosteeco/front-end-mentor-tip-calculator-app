@@ -4,6 +4,14 @@ Challenge Link:
 
 https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX/hub/tip-calculator-app-qPyv6oa1m
 
+Repo Link:
+
+https://github.com/fosteeco/front-end-mentor-tip-calculator-app
+
+Live preview:
+
+https://fosteeco.github.io/front-end-mentor-tip-calculator-app/
+
 This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
