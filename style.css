@@ -100,6 +100,15 @@ input {
   padding: 10px 0;
 }
 
+.tip-btn {
+  background-color: var(--very-dark-cyan);
+  color: #fff;
+  font-size: 24px;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+}
+
 .results-box {
   height: 100%;
   background-color: var(--very-dark-cyan);
