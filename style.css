@@ -77,11 +77,17 @@ input {
 
 .tip-input {
   width: 100%;
+  text-align: right;
+  font-size: 16px;
 }
 
 .tip-input::placeholder {
   color: var(--very-dark-cyan);
   opacity: 0.5;
+}
+
+.error {
+  color: red;
 }
 
 .controls {
@@ -107,6 +113,10 @@ input {
   border-radius: 5px;
   border: 0;
   cursor: pointer;
+}
+
+.tip-btn.selected {
+  background-color: var(--strong-cyan);
 }
 
 .results-box {
