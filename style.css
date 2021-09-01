@@ -47,7 +47,7 @@ input {
   text-align: right;
 }
 
-.form-control {
+.input-control {
   position: relative;
 }
 
@@ -55,9 +55,23 @@ input {
   font-family: 'Font Awesome\ 5 Free';
   font-weight: 900;
   content: '\f155';
-  color: #000;
+  color: var(--very-dark-cyan);
+  opacity: 0.5;
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+
+.num-people-control::before {
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 900;
+  content: '\f007';
+  color: var(--very-dark-cyan);
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   left: 10px;
 }
 
@@ -67,6 +81,7 @@ input {
 
 .tip-input::placeholder {
   color: var(--very-dark-cyan);
+  opacity: 0.5;
 }
 
 .controls {
