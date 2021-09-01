@@ -1,9 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
 :root {
   --strong-cyan: hsl(172, 67%, 45%);
   --very-dark-cyan: hsl(183, 100%, 15%);
-  --dark-grayish-cyan: hsl(186, 14%, 43%);
-  --dark-grayish-cyan: hsl(184, 14%, 56%);
-  --light-grayish-cyan: hsl(185, 41%, 84%);
-  --light-grayish-cyan: hsl(189, 41%, 97%);
+  --dark-grayish-cyan-1: hsl(186, 14%, 43%);
+  --dark-grayish-cyan-2: hsl(184, 14%, 56%);
+  --light-grayish-cyan-1: hsl(185, 41%, 84%);
+  --light-grayish-cyan-2: hsl(189, 41%, 97%);
   --white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Space Mono', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--light-grayish-cyan-1);
+}
+
+.calculator {
+  width: 700px;
+  display: flex;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  font-size: 24px;
+  background-color: var(--light-grayish-cyan-2);
+  border: 0;
+}
+
+.controls {
+  padding: 30px;
+}
+
+.calculator > div {
+  flex: 1;
+}
+
+.tip-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px 0;
+}
+
+.results-box {
+  height: 100%;
+  background-color: var(--very-dark-cyan);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.result {
+  font-size: 36px;
+}
+
+.btn-reset {
+  background-color: var(--strong-cyan);
+  border: 0;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
