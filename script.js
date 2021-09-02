@@ -13,6 +13,7 @@ let persons;
 let totalPerPerson = 0;
 let tipPercent = 5;
 
+// Bill change or people change
 function inputChanged() {
   if (billInput.value > 0) {
     bill = billInput.value;
@@ -23,6 +24,25 @@ function inputChanged() {
   }
 
   calculateTip();
+}
+
+// Bill change
+function billChange() {
+  if (billInput.value.trim() !== "") {
+    billInput.classList.add("green-highlight");
+  } else {
+    billInput.classList.remove("green-highlight");
+  }
+}
+
+// Person change
+function personChange() {
+  const pError = document.querySelector(".p-error");
+  if (+personInput.value === 0) {
+    pError.classList.add("show");
+  } else {
+    pError.classList.remove("show");
+  }
 }
 
 // Tip clicked event
@@ -71,7 +91,9 @@ function calculateTip() {
 
 // Event listeners
 billInput.addEventListener("change", inputChanged);
+billInput.addEventListener("change", billChange);
 personInput.addEventListener("change", inputChanged);
+personInput.addEventListener("change", personChange);
 tipgrid.addEventListener("click", tipClicked);
 form.addEventListener("submit", (e) => {
   e.preventDefault();

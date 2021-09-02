@@ -7,6 +7,7 @@
   --dark-grayish-cyan-2: hsl(184, 14%, 56%);
   --light-grayish-cyan-1: hsl(185, 41%, 84%);
   --light-grayish-cyan-2: hsl(189, 41%, 97%);
+  --error: #ff0033;
   --white: hsl(0, 0%, 100%);
 }
 
@@ -35,6 +36,8 @@ body {
 
 label {
   font-weight: bold;
+  display: block;
+  font-size: 12px;
 }
 
 input {
@@ -45,6 +48,27 @@ input {
 
 .text-input {
   text-align: right;
+  border-radius: 5px;
+}
+
+.num-people-label {
+  position: relative;
+}
+
+.p-error {
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.p-error.show {
+  display: inline;
+}
+
+.green-highlight {
+  box-shadow: 0 0 0 2px var(--strong-cyan);
 }
 
 .input-control {
@@ -87,7 +111,7 @@ input {
 }
 
 .error {
-  color: red;
+  color: var(--error);
 }
 
 .controls {
@@ -162,4 +186,20 @@ input {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 760px) {
+  .calculator {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .tip-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 50px);
+  }
+
+  .text-input {
+    width: 100%;
+  }
 }
