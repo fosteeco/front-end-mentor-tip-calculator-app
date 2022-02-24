@@ -9,7 +9,7 @@ const billInput = document.querySelector("#bill"),
 
 let tipPerPerson = 0;
 let bill;
-let persons;
+let persons = 1;
 let totalPerPerson = 0;
 let tipPercent = 5;
 
